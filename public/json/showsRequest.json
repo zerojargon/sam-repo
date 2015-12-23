@@ -1,0 +1,14 @@
+[
+	{
+		"id": "1",
+		"name": "The Lion King",
+		"poster_image": "https://theatre-blueprint-assets.s3.amazonaws.com/atg/images/shows/ASHLKE/poster.jpg",
+		"location" : "England"
+	},
+	{
+		"id": "2",
+		"name": "The Lion King Strikes Back",
+		"poster_image": "https://theatre-blueprint-assets.s3.amazonaws.com/atg/images/shows/ASHLKE/poster.jpg",
+		"location" : "England"
+	}
+]

@@ -1,0 +1,35 @@
+<!doctype html>
+<!-- ASSIGN OUR ANGULAR MODULE -->
+<html ng-app="app">
+<head>
+	<!-- META -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"><!-- Optimize mobile viewport -->
+
+	<title>Node/Angular Todo App</title>
+
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://theatre-blueprint-assets.s3.amazonaws.com/atg/css/1.12.4/main.min.css">
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+    <script src="../scripts/vendor/angular-ui-router.js"></script>
+	<script src="../scripts/core.js"></script>
+	<script src="../scripts/routes.js"></script>
+	<script src="../models/home.js"></script>
+</head>
+<body ng-controller="mainController">
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<a href="/shows?include=ticketProducts,venueProducts" data-category="header" data-action="brandLogo" class="col s12 m6">
+					<img src="https://theatre-blueprint-assets.s3.amazonaws.com/atg/images/logo-2x.png" alt="Platform Logo" class="header_logo">
+				</a>
+				<div class="col s12 m6 pull-right">
+					<span class="header_phone pull-right" data-category="header" data-action="telephone">0845 458 1628</span>
+					<small class="header_numberStrap pull-right">Calls cost 3p per minute plus your phone company&#x27;s access charge</small>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div ui-view></div>
+</body>
+</html>
