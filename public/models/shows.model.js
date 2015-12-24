@@ -1,11 +1,12 @@
 angular.module('app.models.shows', [
 
 ])
-.service('ShowsModel', function($http, $scope) {
+.service('ShowsModel', function ShowsModel($http, $q, $rootScope){
 	var model = this;
 	model.getShows = function() {
 		$http.get('/json/showsRequest.json').success(function(data) {
-		   $scope.shows = data;
+		   console.log(data);
 		});
 	};
 })
+;

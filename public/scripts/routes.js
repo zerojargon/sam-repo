@@ -8,8 +8,8 @@ angular.module('app')
 		  templateUrl: "/views/test2.tpl.html"
 		})
 		.state('shows', {
-			controller: 'mainController as mainCtrl',
+			controller: 'ShowsController as showsCtrl',
 		  url: "/shows",
 		  templateUrl: "/views/test.tpl.html"
 		});
-	})
+	});
